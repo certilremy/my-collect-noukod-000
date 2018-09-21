@@ -10,3 +10,5 @@ while i < array.length
 
 
 end
+
+collect(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
