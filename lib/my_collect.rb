@@ -1,14 +1,11 @@
+def my_collect(array)
 
-
-def collect (array)
-i = 0
-while i < array.length
-  collection << yield(array[i])
-  i += 1
+  collection = []
+  if array.empty?
+  else
+    array.each {|array_member|
+      collection << yield(array_member)
+    }
   end
   collection
-
-
-end
-
-collect(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
+end 
